@@ -1,15 +1,18 @@
 /* Universal Styles */
-
+body {
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: 0 auto;
-  
+ 
 }
 
 .main-content {
   position: relative;
-  padding-top: 5.9rem; /* To offset for fixed header. */
+  padding-top: 80px; /* To offset for fixed header. */
 }
 
 .center {
@@ -43,13 +46,6 @@ i {
   width: 40px;
 }
 
-
-@media only screen and (max-width: 895px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}
-
 header {
   background-color: #23239a;
   position: fixed;
@@ -59,7 +55,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-  
+ z-index: 1000;
 }
 
 header * {
@@ -67,7 +63,7 @@ header * {
 }
 
 header li {
-  margin: 20px;
+  margin: 0 20px;
  
 }
 
@@ -75,9 +71,6 @@ header li a {
   color: white;
   text-decoration: none;
 }
-
-
-
 
 /* Sign Up Section */
 
@@ -90,6 +83,7 @@ header li a {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 #sign-up-cta {
@@ -137,51 +131,8 @@ header li a {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 895px) {
-  #sign-up-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
-  }
 
-  #sign-up-cta {
-    position: static;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    border: none;
-  }
 
-  #sign-up-cta .content {
-    margin-top: 0;
-  }
-
-  #sign-up-cta .email {
-    display: none;
-  }
-
-  #sign-up-cta h1 {
-    font-size: 3.125rem;
-  }
-
-  #sign-up-cta h2 {
-    font-size: 2.25rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #sign-up-section {
-    height: 20rem;
-  }
-
-  #sign-up-cta h1 {
-    font-size: 2.25rem;
-  }
-
-  #sign-up-cta h2 {
-    font-size: 2rem;
-  }
-}
 
 /* Features Section */
 
@@ -250,44 +201,9 @@ padding-top: 30px;
   color: #23239a;
 }
 
-@media only screen and (max-width: 895px) {
-  #features-section {
-    padding: 1rem;
-  }
 
-  .feature {
-    margin: 0px .5rem;
-    padding: 1rem;
-  }
 
-  .feature h2 {
-    font-size: 2rem;
-    line-height: 1.3;
-  }
 
-  .feature h3 {
-    font-size: .875rem;
-    line-height: 1.4;
-  }
-
-  
-}
-
-@media only screen and (max-width: 600px) {
-  #features-section {
-    flex-flow: column;
-    padding: 0;
-  }
-
-  .feature {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
-  }
-
-  .feature .content {
-    padding: 1.25rem 0 1.875rem 0;
-  }
-}
 
 /* Filters Section */
 
@@ -333,35 +249,7 @@ padding-top: 30px;
   margin: 10px
 }
 
-@media only screen and (max-width: 600px) {
-  #filters-section {
-    padding: 1.5rem 0 0 0;
-  }
 
-  #filters-section .content {
-    margin-bottom: 1rem;
-  }
-
-  #filters-section .content h2 {
-    padding-bottom: .625rem;
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
-  }
-
-  #filters-section .content h3 {
-    font-size: .875rem;
-    line-height: 1.4;
-  }
-
-  #filters-section .images-container {
-    padding: 0;
-  }
-
-  #filters-section .extra {
-    display: none;
-  }
-}
 
 /* Quotes Section */
 
@@ -397,29 +285,6 @@ padding-top: 30px;
   font-size: 16px;
 }
 
-@media only screen and (max-width: 895px) {
-  #quotes-section .content {
-    padding: 3rem 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #quotes-section .content {
-    flex-flow: column;
-    padding: 1.875rem .625rem;
-  }
-
-  #quotes-section .quote {
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
-
-  #quotes-section .quote-citation {
-    display: block;
-    padding-top: 1rem;
-    margin: auto;
-  }
-}
 
 /* Footer */
 
@@ -436,11 +301,5 @@ footer .content {
 
 footer .copyright {
   flex-grow: 1;
-}
-
-@media only screen and (max-width: 600px) {
-  footer .content {
-    font-size: .625rem;
-  }
 }
 
