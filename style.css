@@ -50,44 +50,32 @@ i {
   }
 }
 
-/* Header */
-
 header {
-  text-align: center;
-  height: 50px;
-  padding-top: 3.5rem;  
-  border-bottom: solid 1px #c6c1c1;
-  background-color: #23259a;
-  width: 100%;
-  margin: 0 auto;
+  background-color: #23239a;
   position: fixed;
-  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
   
 }
 
-li {
+header * {
   display: inline;
-  margin-right: 10px;
-  width: 100%;
-  white-space: nowrap ;
-  letter-spacing: 3px;
-  padding: 10px 80px;
-  
 }
 
-nav li a {
+header li {
+  margin: 20px;
+ 
+}
+
+header li a {
   color: white;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 895px) {
-  nav li:last-child {
-    display: block;
-  }
-
-  header .content {
-    padding: 1rem 1rem;
-  }
-}
 
 
 
